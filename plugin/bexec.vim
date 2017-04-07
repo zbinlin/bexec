@@ -110,7 +110,7 @@ nmap <silent> <unique> <Leader>bl :call bexec#CloseOut()<CR>
 "
 " Make the BExec call known to Vim
 "
-com! -nargs=* Bexec         call bexec#Normal(<f-args>)
-com! -nargs=* BexecVisual   call bexec#Visual(<f-args>)
-com! -nargs=* BexecLive     call bexec#Live(<f-args>)
-com!          BexecCloseOut call bexec#CloseOut()
+com! -nargs=*        Bexec         call bexec#Normal(<f-args>)
+com! -nargs=* -range BexecVisual   call bexec#Visual(<f-args>)
+com! -nargs=*        BexecLive     call bexec#Live(<f-args>)
+com!                 BexecCloseOut call bexec#CloseOut()
