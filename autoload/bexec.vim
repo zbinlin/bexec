@@ -273,7 +273,7 @@ function! <SID>GetScriptFilename(...)
             let s:tempfile = tempname()
         endif
         let l:filename = s:tempfile
-        exec writefile(getline(a:1[0], a:1[1]), l:filename)
+        call writefile(getline(a:1[0], a:1[1]), l:filename)
     elseif l:curFilename == ""
         " Save the unsaved buffer to a temp file
         " FIXME: This check is not sufficient! Do this: Edit. :w foo.sh Run :w
@@ -284,7 +284,7 @@ function! <SID>GetScriptFilename(...)
             let s:tempfile = tempname()
         endif
         let l:filename = s:tempfile
-        exec writefile(getline(0, "$"), l:filename)
+        call writefile(getline(0, "$"), l:filename)
     else
         " Use the current file
         let l:filename = l:curFilename
