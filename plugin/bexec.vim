@@ -106,8 +106,8 @@ let loaded_bexec = 1
 "
 nmap <silent> <unique> <Leader>bx :call bexec#Normal()<CR>
 vmap <silent> <unique> <Leader>bx :call bexec#Visual()<CR>
-nmap <silent> <unique> <Leader>bc :call bexec#Live()<CR>
-nmap <silent> <unique> <Leader>bl :call bexec#CloseOut()<CR>
+nmap <silent> <unique> <Leader>bl :call bexec#Live()<CR>
+nmap <silent> <unique> <Leader>bc :call bexec#CloseOut()<CR>
 
 "
 " Make the BExec call known to Vim
